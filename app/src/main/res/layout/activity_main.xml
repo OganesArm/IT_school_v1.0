@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/appBG"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/startFon">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:text="@string/app_name"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/start2"
+            android:textAllCaps="false"
+            android:textColor="@color/bg"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/butMenu"
+        android:layout_below="@id/appBG"
+        android:background="@drawable/ic_belyy_goluboy_fon">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainBox"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/appBG"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="-80dp"
+        android:background="@color/white">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/purple_700"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/start3" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/user_name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainBox"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/noto_sans"
+        android:hint="@string/startHint1"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/user_bio_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name_field"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="@font/noto_sans"
+        android:gravity="start|top"
+        android:hint="@string/startHint2"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_bio_field"
+        android:layout_marginStart="40sp"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/noto_sans"
+        android:onClick="saveData"
+        android:text="@string/startBut4" />
+
+    <Button
+        android:id="@+id/dow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40sp"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/noto_sans"
+        android:onClick="getData"
+        android:text="@string/startBut5" />
+
+
+    <LinearLayout
+        android:id="@+id/butMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/startFon"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/startBut1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goContacts"
+            android:text="@string/startBut2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goWeb"
+            android:text="@string/startBut3">
+
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

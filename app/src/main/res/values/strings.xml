@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IT school</string>
+    <string name="start2">Ваш личный кабинет</string>
+    <string name="start3">Личный кабинет</string>
+    <string name="startBut1">Главная</string>
+    <string name="startBut2">Контакты</string>
+    <string name="startBut3">Блог</string>
+    <string name="startHint1">Ваше имя</string>
+    <string name="startHint2">Ваш номер телефона</string>
+    <string name="startBut4">Отправить свою заявку</string>
+    <string name="startBut5">Показать свою заявку</string>
+    <string name="deleted">Посмотреть \n заявку</string>
+    <string name="contact">Список учеников</string>
+
+</resources>

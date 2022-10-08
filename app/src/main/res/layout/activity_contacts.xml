@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsActivity">
+
+    <RelativeLayout
+        android:id="@+id/appBG"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/startFon">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:text="@string/app_name"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/contact"
+            android:textAllCaps="false"
+            android:textColor="@color/bg"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/butMenu"
+        android:layout_below="@id/appBG">
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/butMenu"
+        android:layout_below="@id/appBG"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp" />
+
+    <LinearLayout
+        android:id="@+id/butMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/startFon">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/purple_700"
+            android:fontFamily="@font/noto_sans"
+            android:onClick="goHome"
+            android:text="@string/startBut1"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/startBut2"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goWeb"
+            android:text="@string/startBut3"
+            android:textStyle="bold">
+
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
