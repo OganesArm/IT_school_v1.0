@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1091868576939",
+    "firebase_url": "https://itschool-afc82-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "itschool-afc82",
+    "storage_bucket": "itschool-afc82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091868576939:android:cae85fd1f5538bd9f2fbee",
+        "android_client_info": {
+          "package_name": "com.example.itschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091868576939-7d96dd5eogqj29s3hal4ft5i9kqn4h5p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.itschool",
+            "certificate_hash": "3d91b9855ef0b4c01f31880a3fc8f70b293287ef"
+          }
+        },
+        {
+          "client_id": "1091868576939-blsub2jqmlr29t7df1j2al68q9ssp43u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFNhG5CpV0-rV2i9fufHoYObjauIDpz_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091868576939-blsub2jqmlr29t7df1j2al68q9ssp43u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

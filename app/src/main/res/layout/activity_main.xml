@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/startFon"
     android:layout_height="match_parent"
     android:background="@color/bg"
     tools:context=".MainActivity">
@@ -58,13 +59,30 @@
 
 
         <Button
+            android:id="@+id/btnInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="70dp"
+            android:backgroundTint="@color/purple_700"
+            android:fontFamily="@font/oswald"
+            android:text="@string/start4" />
+
+        <Button
+            android:id="@+id/btnReg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="50dp"
-            android:layout_marginTop="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="10dp"
             android:backgroundTint="@color/purple_700"
-            android:fontFamily="@font/noto_sans"
-            android:text="@string/start3" />
+            android:fontFamily="@font/oswald"
+            android:text="@string/start5" />
 
     </RelativeLayout>
 
@@ -101,9 +119,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/user_bio_field"
-        android:layout_marginStart="40sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/purple_700"
-        android:fontFamily="@font/noto_sans"
+        android:fontFamily="@font/oswald"
         android:onClick="saveData"
         android:text="@string/startBut4" />
 
@@ -112,10 +132,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/save"
+        android:layout_marginTop="20dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="40sp"
+        android:layout_marginEnd="50sp"
         android:backgroundTint="@color/purple_700"
-        android:fontFamily="@font/noto_sans"
+        android:fontFamily="@font/oswald"
         android:onClick="getData"
         android:text="@string/startBut5" />
 

@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class ContactsActivity extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
 
-    private String[] newArr= new String[] {"Sergey","Aram","George","Bob","Svetlana", "Mark", "Vlad","Anatoliy", "Jon","Karina","Mariya","Denis","Irina","Natalia","Alex","Tigran"};
+    private String[] newArr= new String[] {"Sergey","Aram","George","Bob","Svetlana", "Mark", "Amalya", "Diana", "Vlad","Anatoliy", "Jon","Karina","Mariya","Denis","Irina","Natalia","Alex","Tigran"};
     private ListView listView;
 
     private GestureDetectorCompat gd;

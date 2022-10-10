@@ -19,6 +19,6 @@
         android:backgroundTint="@color/purple_700"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:text="@string/deleted" />
+        android:text="@string/student2" />
 
 </RelativeLayout>
